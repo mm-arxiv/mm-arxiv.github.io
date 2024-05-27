@@ -710,10 +710,10 @@
               Vision-Language Models</h3>
             <div class="is-size-5">
               <span class="author-block">
-                <a href="https://lilei-nlp.github.io" style="color:#008AD7;font-weight:normal;">Lei Li</a>,
+                <a href="https://lilei-nlp.github.io" style="color:#008AD7;font-weight:normal;">Lei Li<sup>*</sup></a>,
               </span>
               <span class="author-block">
-                <a href="https://bugggggggg.github.io/" style="color:#008AD7;font-weight:normal;">Yuqi Wang</a>,
+                <a href="https://bugggggggg.github.io/" style="color:#008AD7;font-weight:normal;">Yuqi Wang<sup>*</sup></a>,
               </span>
               <span class="author-block">
                 <a href="https://runxinxu.github.io/aboutme/" style="color:#94070A;font-weight:normal;">Runxin Xu</a>,
@@ -743,6 +743,8 @@
               <br>
               <!-- <span class="author-block">&nbsp;&nbsp;<sup>*</sup>Equal Contribution</span> -->
             </div>
+
+            <strong style="color:#94070A;">Our paper is accepted in ACL 2024 Main!</strong>
 
             <div class="column has-text-centered">
               <div class="publication-links">
@@ -929,43 +931,7 @@
               </div>
             </centering>
 
-            <br><br>
-
-            <p>
-              Prompt used for GPT-4V to generate QA pairs based on scientific figures.
-            </p>
-            <div style="width: 80%; padding: 10px; border: 5px solid gray; margin: 0;">
-              <centering>
-                Multiple-choice Question Answer Pairs Generation for Scientific Figures
-                <br>
-                <strong>Guideline</strong>
-                <br>
-                The goal of this task is to create answerable multiple-choice questions based on figures from scientific
-                papers, to improve the ability of a large vision language model.
-                <br>
-                The questions should be challenging, and require college-level reasoning. The type of questions should
-                be diverse. The question should be answerable based on the figure. The answer should be one of the
-                answer choices. The answer choices should be plausible and challenging.
-                <br>
-                <strong>Format</strong>
-                <br>
-                Below is an example of the format of the input and output for the task.
-                <br>
-                <strong>Input</strong>
-                <br>
-                Figures: [Figures input in the task]
-                <br>
-                <strong>Output</strong>
-                <br>
-                Question: [Question]
-                <br>
-                Answer Options: [Answer choices, a bullet list.]
-                <br>
-                Correct Choice: [Correct answer choice, e.g., A]
-                <br>
-                Rationale: [Rationale for the correct answer, explain why the answer is correct]
-              </centering>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -1044,7 +1010,7 @@
             </p>
             <centering>
               <div style="text-align: center;">
-                <img id="teaser" width="70%" src="./LLaVA_files/figs/eval_mathvista.png">
+                <img id="teaser" width="70%" src="./LLaVA_files/figs/eval_mathvista.jpg">
               </div>
 
             </centering>
@@ -1052,12 +1018,32 @@
 
             <p>
               Evaluation results of single figure captioning. <a style="color: grey;">Grey</a> results are obtained from
-              a 200-sample subset. Despite most LVLMs struggling to produce high-quality captions of scientific figures,
+              a 500-sample subset. Despite most LVLMs struggling to produce high-quality captions of scientific figures,
               training with ArXivCap significantly boosts the performance.
             </p>
             <centering>
               <div style="text-align: center;">
-                <img id="teaser" width="40%" src="./LLaVA_files/figs/eval_caption.png">
+                <img id="teaser" width="40%" src="./LLaVA_files/figs/eval_caption.jpg">
+              </div>
+            </centering>
+            <br><br>
+
+            <p>
+              Evaluation results of single figure captioning with paper meta information.
+            </p>
+            <centering>
+              <div style="text-align: center;">
+                <img id="teaser" width="40%" src="./LLaVA_files/figs/eval_caption_with_meta.jpg">
+              </div>
+            </centering>
+            <br><br>
+
+            <p>
+              Evaluation results of three newly defined tasks. The best results are highlighted in <strong>bold</strong>.
+            </p>
+            <centering>
+              <div style="text-align: center;">
+                <img id="teaser" width="40%" src="./LLaVA_files/figs/eval_defined_task.jpg">
               </div>
             </centering>
             <br><br>
